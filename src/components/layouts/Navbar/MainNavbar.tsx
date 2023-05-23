@@ -17,6 +17,7 @@ const MainNavbar: React.FunctionComponent<MainNavbarProps> = () => {
         >
           ProductTwo
         </Link>
+        <Link href="/breaking">Breaking</Link>
       </div>
     </div>
   );
