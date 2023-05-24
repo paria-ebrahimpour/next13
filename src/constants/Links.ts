@@ -1,16 +1,20 @@
 // TODO: routes should not be static
 export const LINKS = [
   {
-    name: "Default Fetch",
-    href: "/fetch-data/default",
+    name: "Static Fetch",
+    href: "/fetch-data/static",
   },
   {
     name: "no-store Fetch",
     href: "/fetch-data/no-store",
   },
   {
-    name: "Revalidate Fetch",
-    href: "/fetch-data/revalidate",
+    name: "ISR Fetch",
+    href: "/fetch-data/isr",
+  },
+  {
+    name: "static-ISR",
+    href: "fetch-data/static-isr",
   },
   {
     name: "Dynamic Route",
