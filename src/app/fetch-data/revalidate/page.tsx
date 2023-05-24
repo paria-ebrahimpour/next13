@@ -1,18 +1,18 @@
 export default async function Page() {
-  const res = await fetch("https://swapi.dev/api/planets/?page=1", {
+  const res = await fetch("http://worldtimeapi.org/api/timezone/Asia/Tehran", {
     next: {
       revalidate: 5,
     },
   });
   const data = await res.json();
-  console.log(data);
 
   return (
     <>
-      <h1>it will revalidate data every 5 seconds</h1>
-      {data.results.map((e: Record<string, string>) => (
-        <p key={e.name}>{e.name}</p>
-      ))}
+      <h1>
+        it will revalidate data every 5 seconds, no matter how many times you
+        refresh the page
+      </h1>
+      <p>Tehran date & time: {data.datetime}</p>
     </>
   );
 }
