@@ -9,16 +9,6 @@ const MainNavbar: React.FunctionComponent<MainNavbarProps> = () => {
       style={{ display: "flex", justifyContent: "space-between", margin: 2 }}
     >
       <Link href="/">Home</Link>
-      <div>
-        <Link href="/products/one">ProductOne</Link>
-        <Link
-          style={{ marginInlineEnd: 10, marginInlineStart: 10 }}
-          href="/products/two"
-        >
-          ProductTwo
-        </Link>
-        <Link href="/breaking">Breaking</Link>
-      </div>
     </div>
   );
 };

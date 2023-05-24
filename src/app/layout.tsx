@@ -16,12 +16,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // TODO: styles need to move into css module or scss or ...
   return (
     <html lang="fa">
       <head>
         <Head {...metadata} />
       </head>
-      <body className={inter.className} style={{ border: "1px solid blue" }}>
+      <body
+        className={inter.className}
+        style={{
+          margin: 15,
+          padding: 25,
+          background: "#f3f9fc",
+          borderRadius: 10,
+        }}
+      >
         <MainNavbar />
         {children}
       </body>

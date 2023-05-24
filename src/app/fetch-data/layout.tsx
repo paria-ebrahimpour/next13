@@ -4,9 +4,14 @@ export default function ProductsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div style={{ margin: 5, border: "1px solid red" }}>
-      <p>this is product pages layout</p>
-      <br />
+    <div
+      style={{
+        margin: 15,
+        padding: 25,
+        background: "#cdb4db",
+        borderRadius: 10,
+      }}
+    >
       {children}
     </div>
   );
