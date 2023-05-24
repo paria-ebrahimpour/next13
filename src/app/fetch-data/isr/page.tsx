@@ -8,10 +8,12 @@ export default async function Page() {
 
   return (
     <>
-      <h1>
-        it will revalidate data every 5 seconds, no matter how many times you
-        refresh the page
-      </h1>
+      <h1>ISR</h1>
+      <p>
+        Generates statically but revalidates every 5 seconds - no matter how
+        many times you refresh the page
+      </p>
+      <br />
       <p>Tehran date & time: {data.datetime}</p>
     </>
   );

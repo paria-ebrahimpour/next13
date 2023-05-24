@@ -9,6 +9,10 @@ export const LINKS = [
     href: "/fetch-data/no-store",
   },
   {
+    name: "force-cache Fetch",
+    href: "/fetch-data/force-cache",
+  },
+  {
     name: "ISR Fetch",
     href: "/fetch-data/isr",
   },
