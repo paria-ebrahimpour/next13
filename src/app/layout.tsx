@@ -18,6 +18,9 @@ export default function RootLayout({
   // TODO: styles need to move into css module or scss or ...
   return (
     <html lang="fa">
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body
         className={inter.className}
         style={{
