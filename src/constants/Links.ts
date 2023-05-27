@@ -28,4 +28,8 @@ export const LINKS = [
     name: "Breaking",
     href: "/breaking",
   },
+  {
+    name: "A page from route group",
+    href: "/one",
+  },
 ];
