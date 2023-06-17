@@ -28,4 +28,23 @@ export const LINKS = [
     name: "Breaking",
     href: "/breaking",
   },
+  {
+    name: "A page from route group",
+    href: "/one",
+  },
+  {
+    name: "simple server action",
+    href: "/form-post",
+  },
+  {
+    name: "server action with useFormStatus",
+    href: "/form-post-status",
+  },
+  {
+    name: "server action with useTransition",
+    href: "/form-post-transition",
+  },  {
+    name: "use server action for queries",
+    href: "/search-query",
+  },
 ];
