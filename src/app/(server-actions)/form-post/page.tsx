@@ -2,12 +2,12 @@ import { revalidatePath } from "next/cache";
 
 const todoList: string[] = ["Learn React"];
 
-export default function Home() {
+export default function FormPost() {
   async function addTodo(data: FormData) {
     "use server";
     const todo = data.get("todo") as string;
     todoList.push(todo);
-    revalidatePath("/");
+    revalidatePath("/form-post");
   }
 
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <h1>server actions for forms</h1>
       <h2>Todo List</h2>
       <p>server actions are global. its not session specific</p>
-     <p>server actions ar APIs</p>
+      <p>server actions ar APIs</p>
       <p>
         revalidatePath allows you to revalidate data associated with a specific
         path. This is useful for scenarios where you want to update your cached

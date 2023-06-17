@@ -3,7 +3,7 @@ import AddButton from "./AddButton";
 
 const todoList: string[] = ["Learn React"];
 
-export default function Home() {
+export default function FormPostWithStatus() {
   async function addTodo(data: FormData) {
     "use server";
 
@@ -11,7 +11,7 @@ export default function Home() {
 
     const todo = data.get("todo") as string;
     todoList.push(todo);
-    revalidatePath("/");
+    revalidatePath("/form-post-status");
   }
 
   return (
@@ -20,8 +20,9 @@ export default function Home() {
       <h2>Todo List with loading status</h2>
       <p>
         for adding status we should use &ldquo;use client&ldquo; in button
-        component (ruseFormStatusun js in client). use &ldquo;useFormStatus&ldquo; hook in
-        button component for disable it when it is pending.
+        component (ruseFormStatusun js in client). use
+        &ldquo;useFormStatus&ldquo; hook in button component for disable it when
+        it is pending.
       </p>
       <br />
       <ul>
